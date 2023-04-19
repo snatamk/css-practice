@@ -1,0 +1,13 @@
+.card>p{
+    color:#38D263;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke: 1px blue;
+}
+
+#text{
+    color: unset;
+}
+
+* {
+ font-family:fantasy;
+}
