@@ -12,6 +12,7 @@
 
 .header {
 padding: 24px;
+border-bottom: 1px solid #DEE2E6;
 }
 
 .logo {
@@ -63,6 +64,7 @@ padding: 24px;
 
 .footer {
     padding: 24px 0;
+    border-top: 1px solid #DEE2E6;
 }
 
 .footer_copyright {
@@ -120,8 +122,9 @@ padding: 24px;
 }
 
 .card_price_duration {
-    font-size: 29px;
+    font-size: 20px;
     color: #6C757D;
+    vertical-align: 15px;
 }
 
 .card_block {
@@ -148,4 +151,31 @@ padding: 24px;
     width: 100%;
     font-size: 19px;
     padding: 9px;
+    border-radius: 5px;
 }
+
+.card {
+    border: 1px solid #000000 12.5%;
+    cursor: pointer; 
+    
+}
+
+.card:hover {
+    outline: 1px solid blue;
+    outline-offset: 3px;
+    box-shadow: 5px 5px 10px 1px rgb(117, 116, 120); 
+    
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px 1px rgb(117, 116, 120);  
+}
+
+h1 {
+    text-shadow: 1px 1px 5px rgb(117, 116, 120);
+}
+
+.plans_card:nth-child(2) {
+    visibility: hidden;
+}
+
