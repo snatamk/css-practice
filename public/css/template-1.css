@@ -38,7 +38,9 @@ border-bottom: 1px solid #DEE2E6;
 
 .nav_link:hover {
     text-decoration: underline;
-    color: blue;
+    
+    opacity: 50%;
+
 }
 
 .nav_vertical > .nav_link {
@@ -178,4 +180,52 @@ h1 {
 .plans_card:nth-child(2) {
     visibility: hidden;
 }
+
+.page {
+    background-image: url('/img/test2.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.hero_text {
+    background-color: transparent;
+}
+
+.card_block {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.card_description_item {
+    display: list-item;
+}
+
+.table tr td {
+    border: 1px solid gray;
+    border-bottom-color: red;
+    border-right-color: blue;
+}
+
+.table, text, .text {
+    color: blue;
+}
+
+.table {
+    table-layout: fixed;
+    width: 600px;
+
+    border-collapse: unset;
+    border-spacing: 5;
+    caption-side: top;
+}
+
+.calc {
+   width: 600px;
+
+   margin: 0;
+   margin-left: calc(50% - (600px/2));
+}
+
 
