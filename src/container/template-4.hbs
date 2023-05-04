@@ -1,0 +1,59 @@
+<header class='header'>
+    {{> big}}
+  <nav class='header_nav'>
+    <div class='header_nav_right'>
+    {{> nav list=header }}
+    </div>
+  </nav>
+</header>
+
+{{#with main}}
+    <main class="main">
+        <img src="{{image}}" alt="photo" class="main_image">
+        <div class="main_content">
+            <h1 class="main_heading">{{heading}} </h1>
+            <p class="main_descriotion"> {{descriotion}} </p>
+            <a href="{{href}}" class="button main_button"> {{button}} </a>
+        </div>
+    </main> 
+{{/with}}
+
+
+
+<section class="featured">
+ {{#each featured}}
+  <div class="card">
+    <img src="{{photo}}" alt="photo" class="card_image">
+    <h2 class="card_title"> {{heading}} </h2>
+    <p class="card_info"> {{info}} </p>
+    <a class='button card_button' href='{{linkUrl}}'>
+      {{linkText}}
+    </a>
+  </div>
+  {{/each}}
+</section>
+
+
+
+<div class="action">
+    {{#each actions}}
+    <div class="action_content">
+         <h2 class="action_title"> {{heading}} </h2>
+         <a class="butoon action_button" href="{{url}}"> {{text}} </a>
+    </div>
+    {{/each}}
+</div>
+
+
+<footer class=" footer">
+  <div>
+    {{> big}}
+    <span class='footer_copyright'> (c) 2023 </span>
+  </div>
+  {{#each footer}}
+    <div>
+      <span class="footer_title"> {{title}} </span>
+      {{> nav list=links isVertical=true}}
+    </div>
+  {{/each}}
+</footer>
