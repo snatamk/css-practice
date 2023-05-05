@@ -247,7 +247,7 @@
    color: var(--color-text);
 }
 
-/*===========*/
+/*=========== (< >) === */
 
 .hero_slider_icon {
     background: var(--color-primary);
@@ -282,3 +282,24 @@
     right: var(--space-l);
 }
 /*===========*/
+/* модальне вікно */
+
+.modal {
+    position: sticky;
+    top: 24px;
+    right: 24px;
+
+    height: 100px;
+    width: 600px;
+
+    background: black;
+    color: #fff;
+
+    padding: 24px;
+
+    border-radius: 24px;
+    line-height: 150%;
+    z-index: 1;
+
+}
+/*********************/
