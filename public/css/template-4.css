@@ -162,6 +162,7 @@ justify-content: space-between;
     color: var(--color-white);
     width: 120px; 
     border-radius: var(--border-radius);
+    text-decoration: none;
 }
 
 .featured {
@@ -176,17 +177,22 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    
     gap: var(--space-l);
 
     width: 320;
+}
+
+.card:only-of-type {
+    align-items: center;
+    text-align: center; 
 }
 
 .card_image {
     width: 64px;
     height: 64px;
     border-radius: var(--border-radius);
+    align-items: flex-start;
 }
 
 .card_title {
@@ -247,7 +253,7 @@ justify-content: space-between;
 
     background: var(--color-white);
     color: var(--color-text);
-    border-radius: 4.8px;
+    border-radius: 4px;
     text-decoration: none;
     font-size: 20px;
 }
