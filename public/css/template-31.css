@@ -93,6 +93,7 @@
   font-size: var(--size-d);
   text-decoration: none;
   line-height: 100%;
+  transition: color 1s;
 }
 
 .nav_link:hover {
@@ -205,10 +206,14 @@
 .card_button {
     color: var(--color-white);
     background-color: var(--color-primary);
+    transition: opacity 1s, background-color 1s, color;
 }
 
 .button:hover {
     opacity: 0.7;
+    background-color: green;
+    color: black;
+   
 }
 
 .form {
@@ -285,9 +290,9 @@
 /* модальне вікно */
 
 .modal {
-    position: sticky;
-    top: 24px;
-    right: 24px;
+    position: fixed;
+    top: 200px;
+    left: 200px;
 
     height: 100px;
     width: 600px;
@@ -299,7 +304,10 @@
 
     border-radius: 24px;
     line-height: 150%;
-    z-index: 1;
+    transition: top 3s;
+}
 
+body:hover .modal {
+    top: 600px;
 }
 /*********************/
