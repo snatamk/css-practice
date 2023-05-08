@@ -833,20 +833,19 @@ router.get('/template-4', function (req, res) {
 })
 
 // ================================================================
-
 // ================================================================
 
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/template-31', function (req, res) {
+router.get('/template-5', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
-  res.render('template-31', {
-    layout: 'template-31',
+  res.render('template-5', {
+    layout: 'template-5',
     page: {
-      title: 'Example Page',
+      title: 'Template-5',
     },
 
     header: [
@@ -864,45 +863,66 @@ router.get('/template-31', function (req, res) {
       },
     ],
 
-    hero: {
-      title:
-        'First featurette heading. It’ll blow your mind.',
-      text: 'Some great placeholder content for the first featurette here. Imagine some exciting prose here.',
-      photo: 'https://picsum.photos/500/500',
-      left: '<',
-      right: '>',
+    form: {
+      title: 'Please sign in',
+
+      inputs: [
+        {
+          id: 1,
+          name: 'emailAddress',
+          placeholder: 'Email address',
+          type: 'email',
+        },
+        {
+          id: 2,
+          name: 'userPassword',
+          placeholder: 'Password',
+          type: 'password',
+        },
+      ],
+
+      checkbox: {
+        label: 'Remember me',
+        name: 'remember',
+      },
+
+      button: 'Sign in',
+
+      info: 'Stay updated on new releases and features, guides, and case studies.',
     },
 
-    blog: [
+    messages: {
+      title: 'List groups',
+      list: [
+        {
+          name: 'Tom',
+          message:
+            'I just got back from a trip to Europe. It was amazing!...',
+          day: 'Tue',
+        },
+        {
+          name: 'Emily',
+          message:
+            "I can't wait for the weekend. I'm planning to go hiking with some friends...",
+          day: 'Wed',
+        },
+      ],
+    },
+
+    advantages: [
       {
-        title: 'Latest post',
-        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
-        button: 'View details',
-        href: 'https://example.com/',
-        img: 'https://picsum.photos/140/140',
+        title: '24/7 Availability',
+        text: 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the.',
       },
       {
-        title: 'Featured story',
-        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
-        button: 'View details',
-        href: 'https://example.com/',
-        img: 'https://picsum.photos/140/140',
+        title: '10 Years of Expertise',
+        text: 'Fill out all required fields using real data on the checkout page.',
       },
       {
-        title: 'Popular post',
-        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
-        button: 'View details',
-        href: 'https://example.com/',
-        img: 'https://picsum.photos/140/140',
+        title: 'Loyalty Program',
+        text: 'While you were paying, we had already prepared access to our Member Area, where you can read more about the status of your order.',
       },
     ],
-
-    form: {
-      title: 'Sign up form',
-      info: 'Some placeholder content in a paragraph below the heading and date.',
-      button: 'Sign up',
-      href: 'https://example.com/',
-    },
 
     footer: [
       {
@@ -968,6 +988,8 @@ router.get('/template-31', function (req, res) {
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
+
+// ================================================================
 
 // ================================================================
 
