@@ -334,7 +334,7 @@
     flex-direction: column;
     
     height: 380px;
-    gap:24px;
+    gap: var(--space-l);
 }
 
 .card_image {
