@@ -1,0 +1,12 @@
+<footer class='footer'>
+  {{#with footer}}
+    <div class='footer_n_c'>
+      <div class='name'>
+        {{#each pages}}
+          <a href='{{path}}' class='nav_link'> {{name}} </a>
+        {{/each}}
+      </div>
+      <span class='copyright'> {{copyright}} </span>
+    </div>
+  {{/with}}
+</footer>
