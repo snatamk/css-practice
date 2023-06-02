@@ -38,6 +38,22 @@ router.get('/slack', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/dashboard', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('dashboard', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+// ================================================================
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/selector', function (req, res) {
   // res.render генерує нам HTML сторінку
 
@@ -86,34 +102,19 @@ router.get('/template-1', function (req, res) {
       {
         name: 'Free',
         price: 0,
-        features: [
-          '10 users included',
-          '2 GB of storage',
-          'Email support',
-          'Help center access',
-        ],
+        features: ['10 users included', '2 GB of storage', 'Email support', 'Help center access'],
         button: 'Sign up for free',
       },
       {
         name: 'Pro',
         price: 15,
-        features: [
-          '20 users included',
-          '4 GB of storage',
-          'Priority email support',
-          'Help center access',
-        ],
+        features: ['20 users included', '4 GB of storage', 'Priority email support', 'Help center access'],
         button: 'Get started',
       },
       {
         name: 'Enterprise',
         price: 30,
-        features: [
-          '30 users included',
-          '15 GB of storage',
-          'Phone and email support',
-          'Help center access',
-        ],
+        features: ['30 users included', '15 GB of storage', 'Phone and email support', 'Help center access'],
         button: 'Contact us',
       },
     ],
@@ -462,8 +463,7 @@ router.get('/template-3', function (req, res) {
     ],
 
     hero: {
-      title:
-        'First featurette heading. It’ll blow your mind.',
+      title: 'First featurette heading. It’ll blow your mind.',
       text: 'Some great placeholder content for the first featurette here. Imagine some exciting prose here.',
       photo: 'https://picsum.photos/500/500',
     },
@@ -597,8 +597,7 @@ router.get('/template-31', function (req, res) {
     ],
 
     hero: {
-      title:
-        'First featurette heading. It’ll blow your mind.',
+      title: 'First featurette heading. It’ll blow your mind.',
       text: 'Some great placeholder content for the first featurette here. Imagine some exciting prose here.',
       photo: 'https://picsum.photos/500/500',
       left: '<',
@@ -912,14 +911,12 @@ router.get('/template-5', function (req, res) {
       list: [
         {
           name: 'Tom',
-          message:
-            'I just got back from a trip to Europe. It was amazing!...',
+          message: 'I just got back from a trip to Europe. It was amazing!...',
           day: 'Tue',
         },
         {
           name: 'Emily',
-          message:
-            "I can't wait for the weekend. I'm planning to go hiking with some friends...",
+          message: "I can't wait for the weekend. I'm planning to go hiking with some friends...",
           day: 'Wed',
         },
       ],
@@ -1238,8 +1235,7 @@ router.get('/template-7', function (req, res) {
     articles: [
       {
         id: 1,
-        photo:
-          'https://www.tikbok.com/rahalat/wp-content/uploads/2011/08/1-400x200.jpg',
+        photo: 'https://www.tikbok.com/rahalat/wp-content/uploads/2011/08/1-400x200.jpg',
         name: 'Lorem Ipsum',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id dolor eget sapien lobortis finibus. Fusce euismod, ipsum sit amet pulvinar imperdiet, sapien nunc viverra nulla, vel pulvinar velit leo sed velit.',
@@ -1255,8 +1251,7 @@ router.get('/template-7', function (req, res) {
       },
       {
         id: 3,
-        photo:
-          'https://ns-plus.com.ua/wp-content/uploads/2018/03/stres-400x200.jpg',
+        photo: 'https://ns-plus.com.ua/wp-content/uploads/2018/03/stres-400x200.jpg',
         name: 'Ipsum Dolor',
         description:
           'Sed euismod risus sit amet sapien fermentum, vitae scelerisque lectus hendrerit. Integer at velit tristique, varius dolor in, gravida est. Nunc sagittis justo vel velit tempor, eget faucibus nulla posuere.',
@@ -1264,8 +1259,7 @@ router.get('/template-7', function (req, res) {
     ],
 
     footer: {
-      copyright:
-        '© Copyrights Shop 2022-2023. All rights reserved',
+      copyright: '© Copyrights Shop 2022-2023. All rights reserved',
       pages: [
         {
           path: 'www.example.com/terms',
